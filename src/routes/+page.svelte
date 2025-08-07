@@ -43,11 +43,14 @@
 <div class="flex min-h-screen items-center justify-center">
 	<div class="text-center">
 		<h1 class="mb-8 font-mono text-4xl font-extrabold text-white">nodetunnel.io</h1>
-		<button
-			class="cursor-pointer rounded-full bg-blue-600 px-4 py-2 font-bold text-white transition-colors duration-200 hover:bg-blue-700"
+		<a
+			href="https://github.com/curtjs/nodetunnel/releases"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-block cursor-pointer rounded-full bg-blue-600 px-4 py-2 font-bold text-white transition-colors duration-200 hover:bg-blue-700"
 		>
 			Download
-		</button>
+		</a>
 		<div class="mt-2 text-xs text-gray-400">pre-0.0.1</div>
 	</div>
 
