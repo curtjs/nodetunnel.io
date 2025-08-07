@@ -11,9 +11,7 @@
 			const controller = new AbortController();
 			const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
 
-			const response = await fetch('http://relay.nodetunnel.io:8080/', {
-				signal: controller.signal
-			});
+			const response = await fetch('/api/status');
 
 			clearTimeout(timeoutId);
 
