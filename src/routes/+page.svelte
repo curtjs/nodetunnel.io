@@ -23,7 +23,7 @@
 				throw new Error('Server responded with an error');
 			}
 		} catch (error) {
-			relayStatus = 'relay offline @ ';
+			relayStatus = 'relay offline';
 			isOnline = false;
 			serverStats = null;
 		}
@@ -59,7 +59,7 @@
 			? 'text-green-400'
 			: 'text-red-400'}"
 	>
-		{relayStatus}<b>relay.nodetunnel.io:9998</b>
+		{relayStatus}<b>{isOnline ? 'relay.nodetunnel.io:9998' : ''}</b>
 
 		{#if serverStats}
 			<div class="mt-4 text-xs text-gray-300">
